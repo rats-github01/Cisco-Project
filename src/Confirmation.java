@@ -148,7 +148,7 @@ public class Confirmation extends HttpServlet {
 		out.println("</form>");
 		out.println("<form action='Delete'>") ;
 		out.println("<input type='submit' value='Back'  style='background-color: #1E90FF; color: #ADD8E6; width: 250px; height: 60px; font-size: 20px; margin: 30px;'>") ;
-		out.println("</form>");;
+		out.println("</form>");
 	out.println("</body>");
 	out.println("</html>");
 	/*out.println("<form action='DeleteDocument'>") ;
@@ -176,6 +176,9 @@ public class Confirmation extends HttpServlet {
 		}
 		catch(Exception e){
 			out.println("No Document Found.");
+			out.println("<form action='Delete'>") ;
+			out.println("<input type='submit' value='Back'  style='background-color: #1E90FF; color: #ADD8E6; width: 250px; height: 60px; font-size: 20px; margin: 30px;'>") ;
+			out.println("</form>");
 		}
 		mongoClient.close();
 		
